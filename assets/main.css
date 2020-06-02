@@ -1,0 +1,13 @@
+/* --- items animation --- */
+
+.items-leave-active {
+  transition: opacity 0.5s ease-out, scale 0.5s ease-out;
+}
+
+.items-move {
+  transition: opacity 0.5s ease-out, scale 0.5s ease-out;
+}
+
+.items-enter-active {
+  transition: opacity 0.5s ease-out, scale 0.5s ease-out;
+}
