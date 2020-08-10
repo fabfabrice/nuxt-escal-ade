@@ -80,7 +80,7 @@ export default {
 }
 
 .tab-head {
-  padding: 5px 18px;
+  padding: 0.5rem;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   position: relative;
@@ -95,5 +95,11 @@ export default {
 
 .card-body {
   padding: 20px 16px;
+}
+
+@media screen and (min-width: 45rem) {
+  .tab-head {
+    padding: 1.5rem;
+  }
 }
 </style>

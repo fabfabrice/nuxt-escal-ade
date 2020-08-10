@@ -1,27 +1,23 @@
 <template>
   <ul id="menu">
     <li>
-      <nuxt-link exact to="/">Home</nuxt-link>
+      <nuxt-link exact to="/">
+        <img src="/img/logo.png" class="logo" alt />
+      </nuxt-link>
     </li>
     <li>
-      <nuxt-link to="/actu">Actualités</nuxt-link>
+      <nuxt-link to="/actualites">Actualités</nuxt-link>
     </li>
     <!--
     -->
     <li>
-      <nuxt-link to="/decrochage">Décrochage scolaire</nuxt-link>
+      <nuxt-link to="/decrochage-scolaire">Décrochage scolaire</nuxt-link>
       <ul>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/decrochage-scolaire#signes">Les premiers signes à repérer</nuxt-link>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
-        </li>
-        <li>
-          <a href="#">lien sous menu 3</a>
-        </li>
-        <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/decrochage-scolaire#vu">Le décrochage vu par les jeunes</nuxt-link>
         </li>
       </ul>
     </li>
@@ -31,35 +27,29 @@
       <nuxt-link to="/escal-ade">ESCAL'AdE</nuxt-link>
       <ul>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/escal-ade#qui">Qui sommes-nous ?</nuxt-link>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/escal-ade#projet">Notre projet</nuxt-link>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
-        </li>
-        <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/escal-ade#equipe">Notre équipe</nuxt-link>
         </li>
       </ul>
     </li>
     <!--
     -->
     <li>
-      <nuxt-link to="/actions">Nos actions</nuxt-link>
+      <nuxt-link to="/nos-actions">Nos actions</nuxt-link>
       <ul>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/nos-actions#prevention">Prévention du décrochage scolaire</nuxt-link>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/nos-actions#prise">Prise en charge du décrochage scolaire</nuxt-link>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
-        </li>
-        <li>
-          <a href="#">lien sous menu 3</a>
+          <nuxt-link to="/nos-actions#formation">Formation et mutualisation des compétences</nuxt-link>
         </li>
       </ul>
     </li>
@@ -69,16 +59,13 @@
       <nuxt-link to="/ressources">Ressources</nuxt-link>
       <ul>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <a href="#">Articles</a>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
+          <a href="#">Bibliographie</a>
         </li>
         <li>
-          <a href="#">lien sous menu 3</a>
-        </li>
-        <li>
-          <a href="#">lien sous menu 3</a>
+          <a href="#">Vidéos</a>
         </li>
       </ul>
     </li>
@@ -86,19 +73,23 @@
       <nuxt-link to="/adherer">Adhérer</nuxt-link>
     </li>
     <li>
-      <nuxt-link to="/donations">Faire un don</nuxt-link>
+      <nuxt-link to="/faire-un-don">Faire un don</nuxt-link>
     </li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: "app-nav"
+  name: "app-nav",
 };
 </script>
 
 <style>
 /* GRID */
+
+.logo {
+  width: 50%;
+}
 
 #menu {
   display: none;
@@ -109,10 +100,11 @@ export default {
   font-size: 0.8rem;
 }
 #menu li {
-  padding: 1.2rem 0;
+  padding: 1.3rem 0;
 }
 #menu > li:nth-child(1) {
   background-color: var(--white);
+  padding: 0.2rem;
 }
 #menu > li:nth-child(2) {
   background-color: var(--red);
@@ -172,9 +164,9 @@ export default {
 /* background links sub menu */
 #menu li li {
   display: inline-block;
-  width: 34%;
+  width: 100%;
   vertical-align: top;
-  height: 4rem;
+  height: 4.2rem;
 }
 
 /* the links */

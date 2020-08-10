@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "app-testimony"
+  name: "app-testimony",
 };
 </script>
 
@@ -28,6 +28,7 @@ export default {
 .textquote {
   text-align: left;
   position: relative;
+  padding: 1rem 0 0 0;
 }
 /* <!-- rajouter quote en :before --> */
 
@@ -35,6 +36,7 @@ export default {
   text-align: right;
   font-weight: 600;
   font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 80rem) {

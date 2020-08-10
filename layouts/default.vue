@@ -13,11 +13,16 @@ export default {};
   --hover: rgba(0, 0, 0, 0.1);
   --white: #f5f5f5;
   --red: #ff8c6b;
+  --red-hover: #e57f62;
   --blue: #ceedef;
+  --blue-hover: #c1dddd;
   --yellow: #fff59b;
+  --yellow-hover: #ede18b;
   --green: #cfe09b;
+  --green-hover: #c1ce90;
   --grey: #b0bbd1;
   --orange: #feb131;
+  --orange-hover: #efa328;
   --beige: #f7e4d1;
   --transition: all 0.3s linear;
   --spacing: 2px;
@@ -43,11 +48,11 @@ h4 {
   letter-spacing: 3px;
 }
 .slogan {
-  padding: 14rem 1rem 2rem;
+  padding: 15rem 1rem 0rem;
   font-weight: 800;
 }
 h1 span {
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 1.8;
   display: block;
   color: var(--white);
@@ -57,7 +62,8 @@ h1 {
   color: var(--font);
   font-weight: 800;
   text-align: center;
-  padding: 6rem 0 3rem;
+  padding: 6.5rem 0 2rem;
+  margin-bottom: 1.5rem;
   /* font-size: 2.6rem; */
 }
 h2 {
@@ -67,7 +73,7 @@ h2 {
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-  margin: calc(2rem + 3vw) auto;
+  margin: 4rem 0 2rem 0;
   display: flex;
 }
 h2::before {
@@ -94,7 +100,7 @@ h4 {
 }
 p {
   font-size: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.6rem;
 }
 a {
   text-decoration: none;
@@ -114,21 +120,20 @@ figcaption a span {
 img {
   max-width: 100%;
 }
+.btn-bg {
+  margin: 0.5rem 0 1rem;
+}
 .btn-bg,
 .btn-border {
   text-transform: uppercase;
   border-radius: 0.5rem;
   font-weight: 800;
   text-align: center;
-  display: block;
   color: var(--font);
-  padding: 1.2rem;
+  padding: 1rem;
 }
 .btn-border {
   border: 1px solid var(--red);
-}
-.btn-bg {
-  background-color: var(--red);
 }
 .btn-border:hover,
 .btn-bg:hover {
@@ -145,9 +150,6 @@ img {
   .btn-bg,
   .btn-border {
     display: inline-block;
-  }
-  .btn-bg {
-    margin: 1rem 0;
   }
 }
 </style>

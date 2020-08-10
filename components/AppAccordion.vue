@@ -12,7 +12,7 @@
 <script>
 export default {
   name: "app-accordion",
-  props: ["faq", "index", "open"]
+  props: ["faq", "index", "open"],
 };
 </script>
 
@@ -31,7 +31,7 @@ export default {
 
 .faq .question {
   position: relative;
-  color: #3c3c3c;
+  color: var(--font);
   font-size: 20px;
   transition: all 0.4s linear;
 }
@@ -46,7 +46,7 @@ export default {
 
   width: 30px;
   height: 30px;
-  background-image: url("/img/arrow-down-mint.svg");
+  background-image: url("/img/arrow-down-blue.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@ export default {
   transform: translateY(-50%) rotate(90deg);
 }
 .faq .answer {
-  color: #3c3c3c;
+  color: var(--font);
   font-size: 18px;
   opacity: 0;
   max-height: 0px;
@@ -73,3 +73,4 @@ export default {
   max-height: 1000px;
 }
 </style>
+
